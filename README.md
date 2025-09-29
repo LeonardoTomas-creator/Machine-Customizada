@@ -18,7 +18,7 @@ Esta aplicação permite **converter números entre os principais sistemas numé
 - **Decimal:** o sistema que usamos no dia a dia.  
 - **Binário:** utilizado pelos computadores (0 e 1).  
 - **Octal:** prático em programação de baixo nível.  
-- **Hexadecimal:** comum em programação, endereços de memória e cores digitais.  
+- **Hexadecimal:** comum em programação e cores digitais.  
 
 ---
 
@@ -31,6 +31,3 @@ Esta aplicação permite **converter números entre os principais sistemas numé
 
 ---
 
-## Contato
-
-Desenvolvido por **Leonardo Tomas** 
