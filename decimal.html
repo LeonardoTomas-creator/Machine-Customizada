@@ -1,0 +1,68 @@
+<!-- Criado por Marise Miranda | 2017.1 -->
+<!-- Adaptado por Matheus Matos | 2025.1 -->
+<!-- Modificado por Leonardo Tomas | 2025.2 -->
+
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPTecher's Machine</title>
+
+        <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="assets/icon/favicon.png">
+  </head>
+  
+  <body>
+    <header>
+      <nav class="container">
+        <a href="index.html">Início</a>
+        <a href="binario.html">Binário</a>
+        <a href="decimal.html">Decimal</a>
+        <a href="octal.html">Octal</a>
+        <a href="hexadecimal.html">Hexadecimal</a>
+        <a href="sobre.html">Sobre</a>
+      </nav>
+    </header>
+
+    <section class="class_decimal">
+      <h1>Tomas' Machine - Decimal</h1>
+      <hr />
+      <h2>Conversor de decimal para binário, octal & hexadecimal:</h2>
+      <h3>Digite um número decimal:</h3>
+      <input id="input_decimal" type="number" placeholder="Ex: 159" />
+      <br /><br />
+
+      <button onclick="converterDecimal()">Converter Decimal</button>
+
+      <h3>Resultados do Decimal:</h3>
+
+      <p>Binário:</p>
+      <div id="div_10to2"></div>
+
+      <p>Octal:</p>
+      <div id="div_10to8"></div>
+
+      <p>Hexadecimal:</p>
+      <div id="div_10to16"></div>
+      <hr />
+    </section>
+
+    <footer>
+      <nav>
+        <a>Obrigado por usar! SPTech © 2025</a>
+      </nav>
+    </footer>
+  </body>
+</html>
+<script>
+  
+  function converterDecimal() {
+    var decimal = Number(input_decimal.value);
+
+    div_10to2.innerHTML = `${decimal.toString(2)}<b><i><span style="color:red">₂</span></i></b>`;
+    div_10to8.innerHTML = `${decimal.toString(8)}<b><i><span style="color:red">₈</span></i></b>`;
+    div_10to16.innerHTML = `${decimal.toString(16).toUpperCase()}<b><i><span style="color:red">₁₆</span></i></b>`;
+  }
+
+</script>

@@ -1,0 +1,65 @@
+<!-- Criado por Marise Miranda | 2017.1 -->
+<!-- Adaptado por Matheus Matos | 2025.1 -->
+<!-- Modificado por Leonardo Tomas | 2025.2 -->
+
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPTecher's Machine</title>
+
+        <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="assets/icon/favicon.png">
+  </head>
+  
+  <body>
+    <header>
+      <nav class="container">
+        <a href="index.html">Início</a>
+        <a href="binario.html">Binário</a>
+        <a href="decimal.html">Decimal</a>
+        <a href="octal.html">Octal</a>
+        <a href="hexadecimal.html">Hexadecimal</a>
+        <a href="sobre.html">Sobre</a>
+      </nav>
+    </header>
+
+    <section class="class_hexadecimal">
+      <h1>Tomas' Machine - Hexadecimal</h1>
+      <hr />
+      <h2>Conversor de hexadecimal para binário, decimal & octal:</h2>
+      <h3>Digite um número hexadecimal:</h3>
+      <input id="input_hexadecimal" type="text" placeholder="Ex: 9F" />
+      <br /><br />
+      <button onclick="converterHexadecimal()">Converter Hexadecimal</button>
+
+      <h3>Resultados do Hexadecimal:</h3>
+      <p>Binário:</p>
+      <div id="div_16to2"></div>
+      <p>Decimal:</p>
+      <div id="div_16to10"></div>
+      <p>Octal:</p>
+      <div id="div_16to8"></div>
+      <hr>
+    </section>
+
+    <footer>
+      <nav>
+        <a>Obrigado por usar! SPTech © 2025</a>
+      </nav>
+    </footer>
+  </body>
+</html>
+<script>
+
+  function converterHexadecimal() {
+    var decimal = input_hexadecimal.value;
+    var hexadecimal = parseInt(decimal, 16);
+
+    div_16to2.innerHTML = `${hexadecimal.toString(2)}<b><i><span style="color:red">₂</span></i></b>`;
+    div_16to8.innerHTML = `${hexadecimal.toString(8)}<b><i><span style="color:red">₈</span></i></b>`;
+    div_16to10.innerHTML = `${hexadecimal.toString(10)}<b><i><span style="color:red">₁₀</span></i></b>`;
+
+      }
+</script>
